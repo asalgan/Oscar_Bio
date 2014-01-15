@@ -31,6 +31,7 @@ header {
                 text-align: center;
                 padding-top: 10px;
                 font-family: 'Raleway', sans-serif;
+                float: none;
         }
 }
 
@@ -95,5 +96,28 @@ header {
     .content2, .content3 {
         float: left;
         margin-left: 150px;
+}
+
+#myMenu {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+li { 
+  display: inline;
+  list-style: none;
+}
+
+.listitem {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10%;
 }
 
