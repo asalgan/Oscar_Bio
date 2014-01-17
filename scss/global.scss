@@ -1,32 +1,29 @@
 /* BACKGROUND IMAGES */
 
-#a {
-  background-image: url(../oscar0.jpg);
+body {
+  width: 100%;
 }
 
-#b {
-  background-image: url(../oscar1.jpg);
+html {
+  width: 100%
 }
 
-#c {
-  background-image: url(../oscar2.jpg);
-}
-
-#d {
-  background-image: url(../oscar3.jpg);
+a {
+    color: white;
+    text-decoration: none;
 }
 
 header {
-                  position: fixed;
+        position: fixed;
         width: 100%;
         background-color: black;
-        text-align: left;
+        text-align: center;
         height: 40px;
         color: white;
         z-index: 1000;
-        opacity: .8;
+        opacity: .7;
 
-        h1 {
+h1 {
                 font-size: 20px;
                 text-align: center;
                 padding-top: 10px;
@@ -35,67 +32,93 @@ header {
         }
 }
 
+li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 100px;
+}
+
+#a {
+  background-size: cover;
+  background-image: url(../oscar0.jpg);
+}
+
+#b {
+  background-size: cover;
+  background-image: url(../oscar1.jpg);
+}
+
+#c {
+  background-size: cover;
+  background-image: url(../oscar2.jpg);
+}
+
+#d {
+  background-size: cover;
+  background-image: url(../oscar3.jpg);
+}
+
 .box {
-        background-size:250px 200px;
-        background-repeat:no-repeat;
+        background-size: 500px 400px;
+        background-repeat: no-repeat;
         z-index:1010;
-        width: 250px;
-        height: 200px;        
+        width: 500px;
+        height: 400px;
         opacity: .9
 }
 
-        .box1 {
-                 @extend .box;
-                background-image: url(http://media.screened.com/uploads/0/183/576822-sandw.jpg);
-        }
-
-        .box2 {
-                @extend .box;
-                background-image: url(http://static1.wikia.nocookie.net/__cb20101201224652/muppet/images/thumb/b/be/Gangstersbenny.jpg/302px-Gangstersbenny.jpg);
-
-        }
-
-        .box3 {
-                 @extend .box;
-                background-image: url(http://31.media.tumblr.com/tumblr_llboxeozNC1qjed1zo1_500.jpg);
-        }
-
-        .box4 {
-                 @extend .box;
-                background-image: url(http://www.texasmornings.com/wp-content/uploads/2012/09/muppets-piggy-kermit.jpg);
-        }
-
-        .article1  {
-                @extend .article;
-                background-color: #f28066;
-        }
-
-        .article2 {
-                @extend .article;
-                background-color: #12b3ab;
-        }
-
 .article {
-        font-size:15px;
+        font-size: 22px;
         padding:10px;
         font-family: 'Raleway', sans-serif;
         line-height: 1.5;
 }
 
-.content1, content3 {
+.box1 {
+        @extend .box;
+        background-image: url(http://media.screened.com/uploads/0/183/576822-sandw.jpg);
+}
+
+.box2 {
+        @extend .box;
+        background-image: url(http://static1.wikia.nocookie.net/__cb20101201224652/muppet/images/thumb/b/be/Gangstersbenny.jpg/302px-Gangstersbenny.jpg);
+}
+
+.box3 {
+         @extend .box;
+        background-image: url(http://31.media.tumblr.com/tumblr_llboxeozNC1qjed1zo1_500.jpg);
+}
+
+.box4 {
+         @extend .box;
+        background-image: url(http://www.texasmornings.com/wp-content/uploads/2012/09/muppets-piggy-kermit.jpg);
+}
+
+.article1  {
+        @extend .article;
+        background-color: #f28066;
+}
+
+.article2 {
+        @extend .article;
+        background-color: #12b3ab;
+}
+
+
+.content1, .content3 {
         border: 1px solid #f28066;
 }
 
 .content, .content1 {
-        border:1px solid #12b3ab;
-        width: 250px;
-        float: right;
-        margin-right: 50px;
-    }
+    border:1px solid #12b3ab;
+    width: 500px;
+    float: right;
+    margin-right: 50px;
+}
 
-    .content2, .content3 {
-        float: left;
-        margin-left: 150px;
+.content2, .content3 {
+    float: left;
+    margin-left: 150px;
 }
 
 #myMenu {
@@ -104,28 +127,63 @@ header {
     float: left;
 }
 
-li { 
-  display: inline-block;
-  list-style: none;
-  margin-left: 100px;
-}
 
 .listitem {
   border: 2px solid white;
-  border-radius: 50%;
-  margin-left: 15px;
-  font-size: 20px;
-  height: 22px;
-  width: 22px;
+  border-radius: 100%;
   margin-left: 10px;
+  margin-top: -5px;
+  font-size: 15px;
+  padding: 5px 7px 5px 7px;
+
+  &:hover {
+       border: 2px solid #1f5d1f;
+  }
+
 }
 
-a {
-    color: white;
-    text-decoration: none;
+@media (max-width: 650px) {
+.content, .content1 {
+    border:1px solid #12b3ab;
+    width: 100%;
+    height: 100%;
+    float: none;
+    margin-right: 0;
 }
 
-.pagenumber {
-    margin-left: 6px;
+.content2, .content3 {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
 }
 
+#myMenu {
+  display: none;
+}
+
+#a {
+  background-image: none;
+}
+
+#b {
+  background-image: none;
+}
+
+#c {
+  background-image: none;
+}
+
+#d {
+  background-image: none;
+}
+
+.box4 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index:1010;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+}
+}
