@@ -186,13 +186,17 @@ input:hover, textarea:hover {
   font-size: 45px;
   margin-bottom: 30px;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
 }
 
-.form {
-  text-align: center;
-}
+@media (max-width: 1000px) {
+  .formheader {
+    margin-left: -130px;
+  }
 
+  .form {
+  margin-left: -130px;
+  }
+}
 
 @media (max-width: 780px) {
  #myMenu {
@@ -215,6 +219,20 @@ input:hover, textarea:hover {
     margin-left: 10px;   
     color: #999999;
     font-size: 100%   
+  }
+}
+
+@media (max-width: 600px) {
+  .formheader {
+    margin-left: -200px;
+  }
+
+  .form {
+    margin-left: -200px;
+  }
+
+  label {
+    font-size: 20px;
   }
 }
 
