@@ -5,6 +5,7 @@ body {
 
 html {
   width: 100%;
+  background-color: #a3d2d4;
 }
 
 a {
@@ -220,76 +221,34 @@ input:hover, textarea:hover {
   }
 }
 @media (max-width: 500px) {
-  .content {
-    margin-left: 0%;
+  .formheader {
+    margin-left: -120px;
+    font-size: 30px;
   }
 
-  #a, #b, #c, #d, #e {
-    background-image: none;
-    background-color: white;
-    height: 100%;
+  .form {
+    margin-left: -150px;
   }
 
-  .form label {
-    margin-left: 10px;
-    color: #999999;
-    font-size: 100%;
-  }
-
-  .article1, .article2, .article3, .article, .article1, .article2 {
-    height: 100%;
-  }
-
-  .content, .content1 {
-    width: 100%;
-    height: 100%;
+  .section {
+    width: 500px;
     float: none;
-    margin-left: 0;
   }
 
-  .box1, .box2, .box3, .box4 {
-    width: 100%;
-    margin-left: 0px;
-  }
-}
-.content1, .content3 {
-  border: 1px solid #f28066;
-}
-
-@media (max-width: 450px) {
-  .content, .content1 {
-    border: 1px solid #12b3ab;
-    width: 100%;
-    height: 100%;
-    float: none;
-    margin-left: 0;
+  textarea {
+    width: 350px;
   }
 
-  .box1, .box2, .box3, .box4 {
-    width: 100%;
-    margin-left: 0px;
+  .box, .box1, .box2, .box3, .box4 {
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    z-index: 1010;
+    width: 400px;
+    height: 400px;
+    opacity: 0.9;
   }
 
-  .article1, .article2, .article3, .article, .article1, .article2 {
-    height: 100%;
-  }
-
-  .content2, .content3 {
-    float: none;
-    margin-left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  #myMenu {
-    display: none;
-  }
-
-  #a, #b, #c, #d, #e {
-    background-image: none;
-  }
-
-  header {
-    height: 57px;
+  .article, .article1, .article2 {
+    width: 380px;
   }
 }
